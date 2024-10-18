@@ -58,11 +58,11 @@ def piece_color(x):
         return(0)
     
 
-def even_or_odd(x):
+def is_even(x):
     if x % 2 == 0:
-        return(0)
+        return(True)
     else:
-        return(1)
+        return(False)
 
 # Open and set up display
 
@@ -93,15 +93,15 @@ while running:
         (x, y) = index_to_coords(i)
         x = 100 + (x * 75)
         y = y * 75
-        even_odd = even_or_odd(x + even_or_odd(y))
-        if even_odd == 0:
+        if is_even(x) != is_even(y):
             Texture_White_Tile.texture_draw(x, y)
         else:
             Texture_Black_Tile.texture_draw(x, y)
         pygame.draw.rect(screen, (100, 100, 100), (700, 0, 800, 600))
 
-
-
+    for i in range(0, 64, 1):
+        (x, y) = index_to_coords(i)
+        
 
 
     pygame.display.update()
