@@ -12,18 +12,22 @@ class Texture:
 
 texture_list = []
 
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Pawn.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Rook.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Knight.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Bishop.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Queen.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-King.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Pawn.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Rook.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Knight.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Bishop.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Queen.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-King.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Tile.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Tile.png'))))
-texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Select-Overlay.png'))))
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Pawn.png')))) #0
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Rook.png')))) #1
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Knight.png')))) #2
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Bishop.png')))) #3
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Queen.png')))) #4
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-King.png')))) #5
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Pawn.png')))) #6
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Rook.png')))) #7
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Knight.png')))) #8
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Bishop.png')))) #9
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Queen.png')))) #10
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-King.png')))) #11
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Tile.png')))) #12
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Tile.png')))) #13
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Select-Overlay.png')))) #14
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-White-Icon.png')))) #15
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Black-Icon.png')))) #16
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Log-Outline.png')))) #17
+texture_list.append(Texture(pygame.image.load(os.path.join('Textures', 'Chess-Background.png')))) #18

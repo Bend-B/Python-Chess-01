@@ -29,6 +29,10 @@ mouse = [0, 0, 0]
 
 colors = [[255, 255, 255], [0, 0, 0]]
 
+log = []
+
+letters = ["a", "b", "c", "d", "e", "f", "g", "h"]
+
 # Define functions for data processing
 
 def turn_change(turn):
@@ -88,6 +92,7 @@ from piece_movement import piece_moves
 def player_move(x, y, selected_piece):
     global player_turn
     
+
     piece_move_functions = {
         1: piece_moves.pawn_moves,
         7: piece_moves.pawn_moves,
@@ -109,11 +114,17 @@ def player_move(x, y, selected_piece):
         moves = piece_move_functions[piece_type](game, game[selected_piece], selected_piece)
 
         if moves[coords_to_index(x, y)] == 1:
+            
+            piece_x, piece_y = index_to_coords(piece_selected)
+
+            log.append([letters[piece_x]+str(piece_y + 1), letters[x]+str(y + 1)])
+
             game[coords_to_index(x, y)] = game[selected_piece]
             game[selected_piece] = 0
             player_turn = turn_change(player_turn)
 
 
+from ui import render_ui
 
 # Open and set up display
 
@@ -181,6 +192,11 @@ while running:
         x, y = index_to_coords(piece_selected)
         x, y = coords_to_screen(x, y)
         texture_list[14].texture_draw(x, y)
+
+    text_surfaces = render_ui(player_turn, log)
+
+    for item in range(len(text_surfaces)):
+        screen.blit(text_surfaces[item], (655, 295 + (item * 18)))
 
     pygame.display.update()
     clock.tick(fps)
