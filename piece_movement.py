@@ -10,7 +10,6 @@ def coords_to_index(x, y):
         raise ValueError(f"Invalid coordinates: ({x}, {y})")
 
 
-
 def index_to_coords(z):
     y = math.floor(z / 8)
     x = z - (y * 8)

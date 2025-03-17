@@ -180,7 +180,7 @@ while running:
         else:
             texture_list[12].texture_draw(x, y)
 
-    # Print the pieces
+    # Display game
 
     for i in range(0, 64, 1):
         (x, y) = index_to_coords(i)
